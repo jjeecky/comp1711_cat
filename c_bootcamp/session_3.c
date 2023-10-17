@@ -51,6 +51,8 @@ int main() {
     return 0;
 }
 */
+
+/*
 int main(){
     int num ;
     printf("Enter a number: ");
@@ -67,4 +69,22 @@ int main(){
         
     return 0;
     }
+    */
+
+int main(){
+    int num ;
+    printf("Enter your number: ");
+    scanf("%d",&num);
+    if ((num % 4 == 0) && (num % 5 == 0)){
+        printf("The number is divisible by both 4 and 5.");
+    }
+    else{
+        printf("Number is not divisible by 4 and 5.");
+    }
+
+    return 0;
+
     
+
+}
+
