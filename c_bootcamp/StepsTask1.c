@@ -10,7 +10,6 @@ typedef struct {
 } FITNESS_DATA;
 
 // Define any additional variables here
-FITNESS_DATA fd;
 
 
 
@@ -52,16 +51,10 @@ int main() {
     }
     int buffer_size = 100;
     char line_buffer[buffer_size];
-    while (fgets (line_buffer, buffer_size, file) ! = NULL) { //error
+    while (fgets (line_buffer, buffer_size, file) != NULL) { //error
         printf("%s", line_buffer);
     }
-
     fclose (file);
     return 0;
+
 }
-
-
-/*how many lines in csv file, go through first 3 lines, take each line and put in tokenize function */
-// store string into struct data - strcpy(fd.variablename, string)
-// store integer into struct data - fd.variablename = atoi(integer)
-// fd.date  fd.steps 
